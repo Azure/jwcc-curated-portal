@@ -1,14 +1,12 @@
-# Project
+# JWCC Curated Portal Policy
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+> This repo contains the necessary Azure Policy files used to configure an Azure Tenant for JWCC.
+> Please make sure to subscribe to repository update notifications for new versions as updates to occur (typically monthly).
 
-As the maintainer of this project, please make a few updates:
+If there are any issues with any of the files contained in this repository please:
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+- Document (with screenshots) any issues you are having.
+- Notify your Microsoft JWCC representative as soon as possible.
 
 ## Contributing
 
