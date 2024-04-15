@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "displayName": "JWCC - Deny Azure Government DoD Regions",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy ensures that resources are only deployed in the specified locations.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "General"
+    },
+    "parameters": {},
+    "policyRule": {
+      "if": {
+          "field": "location",
+          "in": [
+            "usdod",
+            "usdodcentral",
+            "usdodeast"
+          ]
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  },
+  "id": "/subscriptions/{subscription-id}/providers/Microsoft.Authorization/policyDefinitions/allowed-locations",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "JWCC-DoDRegions-Restrictions"
+}
