@@ -2,7 +2,7 @@
   "properties": {
     "displayName": "Allowed resource types",
     "policyType": "BuiltIn",
-    "mode": "Indexed",
+    "mode": "All",
     "description": "This policy enables you to specify the resource types that your organization can deploy. Only resource types that support 'tags' and 'location' will be affected by this policy. To restrict all resources please duplicate this policy and change the 'mode' to 'All'.",
     "metadata": {
       "version": "1.0.0",
