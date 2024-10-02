@@ -59,9 +59,49 @@ This folder contains following files.
 
     **`./curatedcatalog.ps1 -folderPath <folderPath> -azureCloudName <azureCloudName> -allowListFileName <allowListFileName>`**
 
-    **Note** - Before running the command replace following with appropriate values ...
-    - Provide value for `<folderPath>` (e.g. `/home/admin/clouddrive/`)
-    - Provide value for `<azureCloudName>` (Pick one of these option relevant to your cloud type - `"AzureUSGovernment"`, `"AzureCloud"`, `"ussec"`, `"usnat"`)
-    - Provide value for `<allowListFileName>` (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`)
+    **Note** - Before running the command replace following placeholders with appropriate values ...
+
+    |  Placeholder name     |  Comment                                                                                       |
+    |:----------------------|:-----------------------------------------------------------------------------------------------|
+    | `<folderPath>`        | Provide folder path where files are uploaded in `clouddrive` (e.g. `/home/admin/clouddrive/`)  |
+    | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"`, `"ussec"`, `"usnat"`)  |
+    | `<allowListFileName>` | Provide file name containing allow list (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`) |
+
+11. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
+
+    |  Type             |  Name                                            |
+    |:----------------- |:-------------------------------------------------|
+    | Policy Definition | `JWCC Curated Catalog - Allowed Resources Types` |
+    | Policy Assignment | `JWCC Curated Catalog`                           |
 
 ### 2. Create curated portal policy using Azure Cli
+
+1. Download following files from [GitHub Repo's Script folder](https://github.com/Azure/jwcc-curated-portal/tree/main/Azure%20Government/AzurePolicyFiles-CuratedPortal/Script) and store locally on your machine.
+
+    - `Curated_Portal_PolicyDefinition.json`
+    - `JWCC_Gov_Final_<Month>_<Year>_<Version>.json`
+    - `Parameters.json`
+    - `curatedcatalog.ps1`
+
+2. Launch **Azure Cli** on your local machine.
+
+2. Log in to Azure using **az login** command with **Global Administrator** user account.
+
+3. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment. 
+
+    **`.\curatedcatalog.ps1 -folderPath <folderPath> -azureCloudName <azureCloudName> -allowListFileName <allowListFileName>`**
+
+    **Note** - Before running the command replace following placeholders with appropriate values ...
+
+    |  Placeholder name     |  Comment                                                                                       |
+    |:----------------------|:-----------------------------------------------------------------------------------------------|
+    | `<folderPath>`        | Provide folder path where files are downloaded on your local machine (e.g. `C:\Temp\Scripts\`)  |
+    | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"`, `"ussec"`, `"usnat"`)  |
+    | `<allowListFileName>` | Provide file name containing allow list (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`) |
+
+11. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
+
+    |  Type             |  Name                                            |
+    |:----------------- |:-------------------------------------------------|
+    | Policy Definition | `JWCC Curated Catalog - Allowed Resources Types` |
+    | Policy Assignment | `JWCC Curated Catalog`                           |
