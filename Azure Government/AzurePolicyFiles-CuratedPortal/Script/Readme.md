@@ -47,7 +47,7 @@ This folder contains following files.
 
 8. Select **Overwrite if files already exist** and then clicon **Upload**. Now you should have all these files in your **clouddrive**.
 
-    ![](media/3-Upload.pngpng)
+    ![](media/3-Upload.png)
 
 9. In **Azure Cloud Shell**, type `cd clouddrive`.
 
