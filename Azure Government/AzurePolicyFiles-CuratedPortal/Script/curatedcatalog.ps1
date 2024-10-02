@@ -4,13 +4,13 @@
 .DESCRIPTION
     This script will create a custom policy definition for the JWCC Curated Catalog based on the Allowed resource types and register the PolicyInsights Provider at the Tenant Root Group as well as create a policy assignment to the Tenant Root Group.
 .EXAMPLE 
-   curatedcatalog.ps1 -FolderPath "c:\users\test" -azureCloudName "AzureUSGovernment" -cc_allow_list "JWCC_Gov_Final_June_2024_4.0.json"
+   curatedcatalog.ps1 -folderPath "c:\users\test" -azureCloudName "AzureUSGovernment" -cc_allow_list "JWCC_Gov_Final_June_2024_4.0.json"
 .NOTES
     This script leverages a preview API for Azure which may or may not be changed in future releases. 
     Script leverage Azure CLI so you must be logged into Azure CLI in order for this to work.
    
     The following parameters are mandatory:
-    -FolderPath
+    -folderPath
     -azureCloudName
     -cc_allow_list
 
@@ -21,7 +21,7 @@ param(
    [Parameter(Mandatory = $true)]
    [ValidateNotNull()]
    [ValidateNotNullOrEmpty()]
-   [String]$FolderPath,
+   [String]$folderpath,
    # cloud_suffix
    [Parameter(Mandatory = $true)]
    [ValidateNotNull()]
@@ -54,7 +54,7 @@ $tenantid = "$(az account list --only-show-errors --query "[?isDefault].homeTena
 $description = "Resources allowed based on Azure Policy file."
 $displayname = "JWCC Curated Catalog - Allowed Resources Types"
 #Azure command to create policy - Base builtin policy replicated - Allowed resource types
-az policy definition create --name $policyName --mode All --management-group $tenantid --description $description --display-name $displayname --metadata category="General" version="1.0.0" --rules $Folderpath\"Curated_Portal_PolicyDefinition.json" --params $Folderpath\"Parameters.json" 
+az policy definition create --name $policyName --mode All --management-group $tenantid --description $description --display-name $displayname --metadata category="General" version="1.0.0" --rules $folderpath\"Curated_Portal_PolicyDefinition.json" --params $folderpath\"Parameters.json" 
 
 Pause
 
