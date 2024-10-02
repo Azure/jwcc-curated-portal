@@ -22,15 +22,20 @@ This folder contains following files.
 
 ## How to run script to create curated portal policy
 
-1. Log in to **Azure Portal** using **Global Administrator** user account.
-
-2. Make this account is also been granted with **Owner** role assignment at **Tenant Root Group** scope.
-
-3. Launch **Azure Cloud Shell** in **PowerShell** mode.
-
-4. Download following files from [GitHub Repo's Script folder](https://github.com/Azure/jwcc-curated-portal/tree/main/Azure%20Government/AzurePolicyFiles-CuratedPortal/Script) and store locally on your machine.
+1. Download following files from [GitHub Repo's Script folder](https://github.com/Azure/jwcc-curated-portal/tree/main/Azure%20Government/AzurePolicyFiles-CuratedPortal/Script) and store locally on your machine.
 
     - `Curated_Portal_PolicyDefinition.json`
     - `JWCC_Gov_Final_<Month>_<Year>_<Version>.json`
     - `Parameters.json`
     - `curatedcatalog.ps1`
+
+2. Log in to **Azure Portal** using **Global Administrator** user account.
+
+3. Make this account is also been granted with **Owner** role assignment at **Tenant Root Group** scope.
+
+4. Launch **Azure Cloud Shell** in **PowerShell** mode.
+
+5. Select **Manage files** and then select **Open file share**.
+
+    ![](media/1-Open-File-Share.png)
+
