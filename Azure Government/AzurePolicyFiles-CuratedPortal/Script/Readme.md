@@ -39,3 +39,26 @@ This folder contains following files.
 
     ![](media/1-Open-File-Share.png)
 
+6. Click on **Upload** and then click on **Browse for files** on **Upload files** page.
+
+    ![](media/2-Upload-Files.png)
+
+7. Select all the files downloaded in step 1 and click **Open**.
+
+8. Select **Overwrite if files already exist** and then clicon **Upload**. Now you should have all these files in your **clouddrive**.
+
+    ![](media/3-Upload.pngpng)
+
+9. In **Azure Cloud Shell**, type `cd clouddrive`.
+
+10. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment.
+
+    **`./curatedcatalog.ps1 -folderPath <folderPath> -azureCloudName <azureCloudName> -allowListFileName <allowListFileName>`**
+
+    **Note** - Before running the command replace following with appropriate values ...
+    - Provide value for `<folderPath>` (e.g. `/home/admin/clouddrive/`)
+    - Provide value for `<azureCloudName>` (Pick one of these option relevant to your cloud type - `"AzureUSGovernment"`, `"AzureCloud"`, `"ussec"`, `"usnat"`)
+    - Provide value for `<allowListFileName>` (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`)
+
+    
+
