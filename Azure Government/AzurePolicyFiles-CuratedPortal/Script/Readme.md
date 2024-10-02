@@ -1,4 +1,4 @@
-## Implementing Curated Portal policy on a new tenant (via Script) 
+# Implementing Curated Portal policy on a new tenant (via Script)
 
 This folder contains following files.
 
@@ -19,8 +19,12 @@ This folder contains following files.
 | `<Year>`    | Indicates Year (e.g. `2024`)   |
 | `<Version>` | Indicates Version (e.g. `4.0`) |
 
+## There are two ways one can create Curated Portal Policy
 
-## How to run script to create curated portal policy
+1. [Create curated portal policy using Azure Cloud Shell](#1-create-curated-portal-policy-using-azure-cloud-shell)
+2. [Create curated portal policy using Azure Cli](#2-create-curated-portal-policy-using-azure-cli)
+
+### 1. Create curated portal policy using Azure Cloud Shell
 
 1. Download following files from [GitHub Repo's Script folder](https://github.com/Azure/jwcc-curated-portal/tree/main/Azure%20Government/AzurePolicyFiles-CuratedPortal/Script) and store locally on your machine.
 
@@ -60,5 +64,4 @@ This folder contains following files.
     - Provide value for `<azureCloudName>` (Pick one of these option relevant to your cloud type - `"AzureUSGovernment"`, `"AzureCloud"`, `"ussec"`, `"usnat"`)
     - Provide value for `<allowListFileName>` (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`)
 
-    
-
+### 2. Create curated portal policy using Azure Cli
