@@ -35,7 +35,7 @@ This folder contains following files.
 
 2. Log in to **Azure Portal** using **Global Administrator** user account.
 
-3. Make this account is also been granted with **Owner** role assignment at **Tenant Root Group** scope.
+3. Make sure this account has **Owner** role assignment at **Tenant Root Group** scope.
 
 4. Launch **Azure Cloud Shell** in **PowerShell** mode.
 
@@ -87,7 +87,7 @@ This folder contains following files.
 
 2. Log in to Azure using **az login** command with **Global Administrator** user account.
 
-3. Make this account is also been granted with **Owner** role assignment at **Tenant Root Group** scope.
+3. Make sure this account has **Owner** role assignment at **Tenant Root Group** scope.
 
 4. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment. 
 
