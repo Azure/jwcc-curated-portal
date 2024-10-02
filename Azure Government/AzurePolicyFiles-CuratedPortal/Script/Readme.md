@@ -87,7 +87,9 @@ This folder contains following files.
 
 2. Log in to Azure using **az login** command with **Global Administrator** user account.
 
-3. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment. 
+3. Make this account is also been granted with **Owner** role assignment at **Tenant Root Group** scope.
+
+4. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment. 
 
     **`.\curatedcatalog.ps1 -folderPath <folderPath> -azureCloudName <azureCloudName> -allowListFileName <allowListFileName>`**
 
@@ -99,7 +101,7 @@ This folder contains following files.
     | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"`, `"ussec"`, `"usnat"`)  |
     | `<allowListFileName>` | Provide file name containing allow list (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`) |
 
-11. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
+5. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
 
     |  Type             |  Name                                            |
     |:----------------- |:-------------------------------------------------|
