@@ -57,14 +57,13 @@ This folder contains following files.
 
 10. Run following command to run the script to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment.
 
-    **`./curatedcatalog.ps1 -folderPath <folderPath> -azureCloudName <azureCloudName> -allowListFileName <allowListFileName>`**
+    **`./curatedcatalog.ps1 -folderPath <folderPath> -allowListFileName <allowListFileName>`**
 
     **Note** - Before running the command replace following placeholders with appropriate values ...
 
     |  Placeholder name     |  Comment                                                                                       |
     |:----------------------|:-----------------------------------------------------------------------------------------------|
     | `<folderPath>`        | Provide folder path where files are uploaded in `clouddrive` (e.g. `/home/admin/clouddrive/`)  |
-    | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"`)  |
     | `<allowListFileName>` | Provide file name containing allow list (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`) |
 
 11. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
@@ -91,14 +90,13 @@ This folder contains following files.
 
 5. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment. 
 
-    **`.\curatedcatalog.ps1 -folderPath <folderPath> -azureCloudName <azureCloudName> -allowListFileName <allowListFileName>`**
+    **`.\curatedcatalog.ps1 -folderPath <folderPath> -allowListFileName <allowListFileName>`**
 
     **Note** - Before running the command replace following placeholders with appropriate values ...
 
     |  Placeholder name     |  Comment                                                                                       |
     |:----------------------|:-----------------------------------------------------------------------------------------------|
     | `<folderPath>`        | Provide folder path where files are downloaded on your local machine (e.g. `C:\Temp\Scripts\`)  |
-    | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"`)  |
     | `<allowListFileName>` | Provide file name containing allow list (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`) |
 
 6. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
