@@ -45,10 +45,6 @@ if ($azureCloudName -eq 'azurecloud') {
     $azureCloudManagementPrefix = 'https://management.azure.com'
 } elseif ($azureCloudName -eq 'azureusgovernment') {    
     $azureCloudManagementPrefix = 'https://management.usgovcloudapi.net'    
-} elseif ($azureCloudName -eq 'ussec') {    
-    $azureCloudManagementPrefix = 'https://management.azure.microsoft.scloud'    
-} elseif ($azureCloudName -eq 'usnat') {    
-    $azureCloudManagementPrefix = 'https://management.azure.eaglex.ic.gov'    
 }
 
 # Elevate Access for Global Administrator - Which grants the "User Access Administrator" role at root scope (/).
