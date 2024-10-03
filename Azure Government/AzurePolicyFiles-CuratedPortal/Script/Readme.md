@@ -7,7 +7,7 @@ This folder contains following files.
 | `Curated_Portal_PolicyDefinition.json`          | Contains **Azure Policy Definition** to be used for Curated Portal Policy               |
 | `JWCC_Gov_Final_<Month>_<Year>_<Version>.json`  | Contains **latest JWCC Catalog** to be used as parameter value for Policy Assignment    |
 | `Parameters.json`                               | Contains **Azure Policy Parameters** to be used for Curated Portal Policy               |
-| `curatedcatalog.ps1`                            | PowerShell Script to create Curated Portal Policy Definion/Assignment                   |
+| `curatedcatalog.ps1`                            | PowerShell Script to create Curated Portal Policy Definition/Assignment                   |
 
 **Note** - Name of the file `JWCC_Gov_Final_<Month>_<Year>_<Version>.json` will change as JWCC Catalog gets updated over time.
 
@@ -49,13 +49,13 @@ This folder contains following files.
 
 7. Select all the files downloaded in step 1 and click **Open**.
 
-8. Select **Overwrite if files already exist** and then clicon **Upload**. Now you should have all these files in your **clouddrive**.
+8. Select **Overwrite if files already exist** and then click on **Upload**. Now you should have all these files in your **clouddrive**.
 
     ![](media/3-Upload.png)
 
 9. In **Azure Cloud Shell**, type `cd clouddrive`.
 
-10. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment.
+10. Run following command to run the script to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment.
 
     **`./curatedcatalog.ps1 -folderPath <folderPath> -azureCloudName <azureCloudName> -allowListFileName <allowListFileName>`**
 
@@ -85,11 +85,11 @@ This folder contains following files.
 
 2. Launch **Azure Cli** on your local machine.
 
-2. Log in to Azure using **az login** command with **Global Administrator** user account.
+3. Log in to Azure using **az login** command with **Global Administrator** user account.
 
-3. Make sure this account has **Owner** role assignment at **Tenant Root Group** scope.
+4. Make sure this account has **Owner** role assignment at **Tenant Root Group** scope.
 
-4. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment. 
+5. Run following command to run the script to to create Azure Policy Definition, Register Microsoft.PolicyInsights resource provider and Policy Assignment. 
 
     **`.\curatedcatalog.ps1 -folderPath <folderPath> -azureCloudName <azureCloudName> -allowListFileName <allowListFileName>`**
 
@@ -101,7 +101,7 @@ This folder contains following files.
     | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"`, `"ussec"`, `"usnat"`)  |
     | `<allowListFileName>` | Provide file name containing allow list (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`) |
 
-5. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
+6. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
 
     |  Type             |  Name                                            |
     |:----------------- |:-------------------------------------------------|
