@@ -64,7 +64,7 @@ This folder contains following files.
     |  Placeholder name     |  Comment                                                                                       |
     |:----------------------|:-----------------------------------------------------------------------------------------------|
     | `<folderPath>`        | Provide folder path where files are uploaded in `clouddrive` (e.g. `/home/admin/clouddrive/`)  |
-    | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"``)  |
+    | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"`)  |
     | `<allowListFileName>` | Provide file name containing allow list (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`) |
 
 11. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
@@ -98,7 +98,7 @@ This folder contains following files.
     |  Placeholder name     |  Comment                                                                                       |
     |:----------------------|:-----------------------------------------------------------------------------------------------|
     | `<folderPath>`        | Provide folder path where files are downloaded on your local machine (e.g. `C:\Temp\Scripts\`)  |
-    | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"``)  |
+    | `<azureCloudName>`    | Provide value for Cloud Name (Pick one of these options relevant to your cloud name - `"AzureUSGovernment"`, `"AzureCloud"`)  |
     | `<allowListFileName>` | Provide file name containing allow list (e.g. `"JWCC_Gov_Final_June_2024_4.0.json"`) |
 
 6. Successful run of above command will create following two resoruces - if you have used default names provided in the script.
