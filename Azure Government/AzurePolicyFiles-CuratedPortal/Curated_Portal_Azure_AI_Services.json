@@ -1,0 +1,31 @@
+{
+  "mode": "Indexed",
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.CognitiveServices/accounts"
+        },
+        {
+          "not": {
+            "field": "kind",
+            "in": "[parameters('allowedKinds')]"
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  },
+  "parameters": {
+    "allowedKinds": {
+      "type": "Array",
+      "metadata": {
+        "displayName": "allowedKinds",
+        "description": "Azure AI Services allowed kinds."
+      }
+    }
+  }
+}

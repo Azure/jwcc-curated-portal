@@ -1,0 +1,10 @@
+[
+    "microsoft.signalrservice/webPubSub",
+    "microsoft.signalrservice/webPubSub/customCertificates",
+    "microsoft.signalrservice/webPubSub/customDomains",
+    "microsoft.signalrservice/webPubSub/hubs",
+    "microsoft.signalrservice/webPubSub/privateEndpointConnections",
+    "microsoft.signalrservice/webPubSub/replicas",
+    "microsoft.signalrservice/webPubSub/replicas/sharedPrivateLinkResources",
+    "microsoft.signalrservice/webPubSub/sharedPrivateLinkResources"
+]
