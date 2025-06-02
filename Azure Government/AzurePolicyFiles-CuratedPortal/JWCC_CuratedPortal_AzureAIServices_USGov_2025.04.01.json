@@ -1,0 +1,16 @@
+[
+    "AnomalyDetector",
+    "OpenAI",
+    "ComputerVision",
+    "ContentModerator",
+    "FormRecognizer",
+    "ImmersiveReader",
+    "LUIS",
+    "MetricsAdvisor",
+    "Personalizer",
+    "CustomVision",
+    "Face",
+    "SpeechServices",
+    "TextAnalytics",
+    "TextTranslation"
+]

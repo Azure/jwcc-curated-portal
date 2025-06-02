@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "displayName": "Audit Resource Types to display which services are allowed for non-production use only.",
+        "policyType": "Custom",
+        "mode": "All",
+        "description": "This policy audits resources to list which are not authorized for production use.",
+        "parameters": {
+            "resourceTypes": {
+                "type": "Array",
+                "metadata": {
+                    "displayName": "Resource Types",
+                    "description": "The resource types to audit."
+                }
+            }
+        },
+        "policyRule": {
+            "if": {
+                "field": "type",
+                "in": "[parameters('resourceTypes')]"
+            },
+            "then": {
+                "effect": "audit"
+            }
+        }
+    }
+}
