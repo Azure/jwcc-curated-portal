@@ -1,0 +1,20 @@
+[
+    "AnomalyDetector",
+    "CustomVision",
+    "CustomVision.Prediction",
+    "CustomVision.Training",
+    "OpenAI",
+    "ComputerVision",
+    "ContentModerator",
+    "FormRecognizer",
+    "ImmersiveReader",
+    "LUIS",
+    "MetricsAdvisor",
+    "Personalizer",
+    "QnAMaker",
+    "SpeechServices",
+    "TextAnalytics",
+    "TextTranslation",
+    "AIServices",
+    "Face"
+]
