@@ -89,13 +89,6 @@ Resource types and kinds added based on file cleanup and/or cloud updates.
 
 ### Microsoft Azure Portal - Marketplace 
 - microsoft.marketplace/privatestores/collections/offers/contextsview
-- microsoft.marketplaceordering/agreements
-- microsoft.marketplaceordering/agreements/offers/plans
-- microsoft.marketplaceordering/agreements/offers/plans/cancel
-- microsoft.marketplaceordering/agreements/offers/plans/sign
-- microsoft.marketplaceordering/offertypes/publishers/offers/plans/agreements
-- microsoft.marketplaceordering/operations
-
 
 ### Microsoft Defender for Cloud
 - microsoft.security/securityconnectors/devops/githubowners/repos/issues
