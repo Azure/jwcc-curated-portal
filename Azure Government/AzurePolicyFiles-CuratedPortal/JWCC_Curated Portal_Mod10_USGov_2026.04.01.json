@@ -1,4 +1,8 @@
 [
+    "microsoft.azuredata/register",
+    "microsoft.azuredata/sqlserverregistrations",
+    "microsoft.azuredata/sqlserverregistrations/sqlservers",
+    "microsoft.azuredata/unregister",
     "microsoft.sqlvirtualmachine/locations/availabilitygrouplisteneroperationresults",
     "microsoft.sqlvirtualmachine/locations/registersqlvmcandidate",
     "microsoft.sqlvirtualmachine/locations/sqlvirtualmachinegroupoperationresults",
